@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 25, 2021
+ *      Author: LapStore
+ */
+#include <stdio.h>
+int main()
+{
+	int x,y;
+	char c;
+	printf("enter operator +or*or-or/:");
+	fflush(stdout); fflush(stdin);
+	scanf("%c",&c);
+	printf("enter two numbers:");
+	fflush(stdout); fflush(stdin);
+	scanf("%d %d",&x,&y);
+	switch(c){
+	case'+':
+		printf("%d+%d=%d",x,y,x+y);
+		break;
+	case'-':
+			printf("%d-%d=%d",x,y,x-y);
+			break;
+	case'*':
+			printf("%d*%d=%d",x,y,x*y);
+			break;
+	case'/':
+			printf("%d/%d=%d",x,y,x/y);
+			break;
+	default:
+	        printf("error");
+	        break;
+	}
+	return 0;
+
+}
+

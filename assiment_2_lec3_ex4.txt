@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 25, 2021
+ *      Author: LapStore
+ */
+#include <stdio.h>
+int main()
+{
+	int num;
+	printf("enter a number : ");
+	fflush(stdout); fflush(stdin);
+	scanf("%d",&num);
+	if (num<=0)
+	{
+		if (num==0)
+			printf("you enterd zero ");
+		else
+			printf("%f is negative",num);
+	}
+	else
+		printf("%f is positive",num);
+}
+

@@ -1,0 +1,27 @@
+/*
+ * myp.c
+ *
+ *  Created on: Jul 25, 2021
+ *      Author: LapStore
+ */
+#include <stdio.h>
+int main ()
+{
+	int x,y;
+	printf ("x value :");
+	fflush(stdout); fflush(stdin);
+	scanf ("%d",&x);
+	printf ("y value :");
+	fflush(stdout); fflush(stdin);
+	scanf ("%d",&y);
+	x=x+y;
+	y=x-y;
+	x=x-y;
+
+	printf ("x value after swapping:%d",x);
+	fflush(stdout);
+	printf ("\n y value after swapping:%d",y);
+	fflush(stdout);
+
+}
+

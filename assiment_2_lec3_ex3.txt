@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 25, 2021
+ *      Author: LapStore
+ */
+#include <stdio.h>
+int main()
+{
+ float a,b,c;
+ printf("enter three numbers:");
+ fflush(stdout);fflush(stdin);
+ scanf("%f\n %f\n %f",&a,&b,&c);
+ if (a>=b && a>=c)
+	 printf("the largestnnumber is %f",a);
+ else if (b>=a && b>=c)
+	 printf("the largestnnumber is %f",b);
+ else
+	 printf("the largestnnumber is %f",c);
+}
+
